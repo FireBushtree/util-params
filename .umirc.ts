@@ -1,20 +1,14 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'envcloud-utils-downloads',
+  title: 'envcloud-utils-params',
   favicon:
     './images/logo.png',
-  logo: '/util-download/images/logo.png',
+  logo: '/util-params/images/logo.png',
   outputPath: 'docs-dist',
-  base: '/util-download',
-  publicPath: '/util-download/',
-  proxy: {
-    '/cloud': {
-      target: 'http://ljfl.cc.envcloud.com.cn',
-      timeout: 1000 * 60 * 10,
-      changeOrigin: true,
-    },
-  },
+  base: '/util-params',
+  publicPath: '/util-params/',
+  hash: true,
   extraBabelPlugins: [
     [
       'import',
